@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curhat Anonymous</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen p-4 flex flex-col items-center">
+    <div class="container mx-auto max-w-2xl mt-8">
+      <div class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">Curhat Anonymous</h1>
+        <p class="text-lg text-gray-600">
+          Bagikan apa yang ada di hatimu tanpa nama.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6 mb-10">
+        <form id="curhat-form">
+          <textarea
+            id="curhat-input"
+            rows="4"
+            placeholder="Ketik curhatanmu di sini..."
+            class="w-full p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+          ></textarea>
+          <div class="flex justify-end mt-4">
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out"
+            >
+              Kirim
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="curhat-list" class="space-y-6">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-700 italic">
+            "Kadang merasa lelah dengan ekspektasi orang lain, tapi aku coba
+            terus jalani."
+          </p>
+          <p class="text-right text-sm text-gray-500 mt-2">-- Anonymous</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-700 italic">
+            "Sangat bersyukur masih diberi kekuatan untuk menghadapi hari-hari
+            sulit."
+          </p>
+          <p class="text-right text-sm text-gray-500 mt-2">-- Anonymous</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
